@@ -1,0 +1,330 @@
+* {
+margin: 0;
+font-family: arial;
+box-sizing: border-box;
+}
+body {
+   background-image: url("bg-for-hostel.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.typewriter {
+    display: inline-block;
+}
+ .text {
+    font-size: clamp(1.6rem, 4vw, 5rem);
+    font-family: monospace;
+    overflow: hidden;
+    position: absolute;
+    font-weight: bold;
+    top: 35px;
+    left: 20%;
+    color: black;
+    /* keeps on single line*/
+    white-space: nowrap;
+    border-right: 1px solid;
+    animation: typing 7s ease-in-out forwards,
+    blink 1s step-end infinite;
+}
+ @keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 51%;
+    }
+}
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+.main-div {
+    height: 500px;
+    width: 70vw;
+    max-width: 900px;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    padding: 1rem;
+    box-shadow: inset 5px 5px 4px grey;
+    border: 5px solid #9c89b8;
+    border-radius: 5px;
+}
+ 
+.section {
+    display: flex;
+    margin-top: 100px;
+    flex-direction: row;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.option {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    border-radius: 15px;
+    height: 150px;
+    width: 23%;
+    transition: all .5s ease-in-out .2s;
+    transform-origin: center;
+    border: 2px solid #041c2c; 
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: #ffb3c6;
+    color: black;
+}
+
+.animate-list li {
+  opacity: 0;
+  animation: fadeInUp 0.6s forwards;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.animate-list {
+    padding-left: 0;
+    margin-left: 0;
+ 
+}
+
+/* Add delay for each bullet */
+.animate-list li:nth-child(1) { animation-delay: 1s; }
+.animate-list li:nth-child(2) { animation-delay: 2s; }
+.animate-list li:nth-child(3) { animation-delay: 3s; }
+.animate-list li:nth-child(4) { animation-delay: 4s; }
+.animate-list li:nth-child(5) { animation-delay: 5s; }
+.animate-list li:nth-child(6) { animation-delay: 6s; }
+.animate-list li:nth-child(7) { animation-delay: 7s; }
+.animate-list li:nth-child(8) { animation-delay: 8s; }
+.animate-list li:nth-child(9) { animation-delay: 9s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.bullet_pt {
+position: absolute;
+left: 30%;
+top: 30%;
+}
+.bullet_pt p {
+    font-size: 2rem;
+    text-decoration: underline;
+    color:slateblue;
+    font-weight: bold;
+}
+.location {
+    font-size: 1.7rem;
+    border: 2px solid black;
+    color:#9e0059;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 5px;
+}
+.location-p {
+     font-size: 2rem;
+    text-decoration: underline;
+    color:slateblue;
+    font-weight: bold;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+}
+.reviewss {
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    color: black;
+    font-size: 2rem;
+    text-decoration: underline;
+    border-radius: 10px;
+}
+/*
+.reviewss::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background-color: white;
+    padding: 3px;
+    animation: move 1.5s infinite;
+    overflow: hidden;
+    z-index: -99;
+}
+*/
+
+/*
+@keyframes move {
+    100% {
+        transform: translate(-50%, -50%) rotate(225deg);
+    }
+}
+    */
+ 
+ 
+.review {
+    height: 350px;
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    opacity: 0;
+    animation: fadeInUp 3s forwards;
+
+}
+
+
+.review img:nth-child(1) { animation-delay: 1s; }
+.review img:nth-child(2) { animation-delay: 2s; }
+.review img:nth-child(3) { animation-delay: 3s; }
+.review img:nth-child(4) { animation-delay: 4s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.review img {
+    height: 150px;
+    width: 300px;
+    object-fit: cover;
+}
+.more-rev {
+    height: 80px;
+    width: 300px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5px;
+    font-size: 1.3rem;
+}
+.more-rev a {
+text-decoration: none;
+color: #9e0059;
+}
+
+.home i {
+font-size: 3rem;
+color: black;
+}
+
+header {
+    height: 90px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    top: 3%;
+    left: 2%;
+    color: black;
+    border: 3.5px solid cornflowerblue;;
+    font-size: 1.5rem;
+    align-items: center;
+    padding-top: 15px;
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 4px grey;
+}
+.About-me i {
+    font-size: 1.5rem;
+    color: black;
+}
+ 
+
+
+@media (max-width: 600px) {
+.text {
+   font-size: 1.8rem;
+   margin-top: 10px;
+   position: absolute;
+   left: 5%;
+   top: 5%;
+}
+.option {
+    width: 30%;
+    height: 90px;
+    font-size: .9rem;
+}
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px;
+}
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.bullet_pt {
+position: absolute;
+left: 20%;
+top: 30%;
+}
+.bullet_pt p {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    color:slateblue;
+    font-weight: bold;
+}
+ .review img {
+    height: 150px;
+    width: 270px;
+    object-fit: cover;
+    padding: 3px;
+}
+.reviewss {
+    height: 450px;
+    width: 580px;
+    position: absolute;
+    left: 2%;
+    top: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+.more-rev {
+    height: 80px;
+    width: 270px;
+}
+header {
+    height: 80px;
+    width: 150px;
+}
+.About-me i {
+    font-size: 1.1rem;
+    color: black;
+}
+.home i {
+font-size: 1.5rem;
+color: black;
+}
+.animate-list li {
+font-size: 18px;
+}
+}
