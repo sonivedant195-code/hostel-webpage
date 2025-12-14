@@ -1,4 +1,4 @@
-* {
+ * {
 margin: 0;
 font-family: arial;
 box-sizing: border-box;
@@ -39,7 +39,7 @@ body {
         width: 0;
     }
     to {
-        width: 51%;
+        width: 71%;
     }
 }
 @keyframes blink {
@@ -48,7 +48,7 @@ body {
     }
 }
 .main-div {
-    height: 500px;
+    height: 530px;
     width: 70vw;
     max-width: 900px;
     position: absolute;
@@ -152,6 +152,7 @@ top: 30%;
     position: absolute;
     left: 10%;
     top: 30%;
+    width: 100%;
     color: black;
     font-size: 2rem;
     text-decoration: underline;
@@ -231,15 +232,13 @@ font-size: 3rem;
 color: black;
 }
 
-header {
+.about {
     height: 90px;
-    width: 250px;
+    width: 150px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    position: fixed;
-    top: 3%;
-    left: 2%;
+    justify-content:  center;
+     
     color: black;
     border: 3.5px solid cornflowerblue;;
     font-size: 1.5rem;
@@ -252,16 +251,27 @@ header {
     font-size: 1.5rem;
     color: black;
 }
+
+.krishna-img {
+    margin-top: 30px;
+}
+.krishna-img  img {
+    height: 250px;
+    width: 500px;
+}
+.food-img img {
+    margin-top: 10px;
+    height: 200px;
+    width: 300px;   
+}
  
-
-
 @media (max-width: 600px) {
 .text {
    font-size: 1.8rem;
    margin-top: 10px;
-   position: absolute;
-   left: 5%;
-   top: 5%;
+   height: 70px;
+ white-space: nowrap;
+ margin-left: -50px;
 }
 .option {
     width: 30%;
@@ -281,7 +291,7 @@ body {
 }
 .bullet_pt {
 position: absolute;
-left: 20%;
+left: 5%;
 top: 30%;
 }
 .bullet_pt p {
@@ -291,30 +301,40 @@ top: 30%;
     font-weight: bold;
 }
  .review img {
-    height: 150px;
-    width: 270px;
+    height: 135px;
+    width: 250px;
     object-fit: cover;
     padding: 3px;
 }
 .reviewss {
-    height: 450px;
-    width: 580px;
-    position: absolute;
-    left: 2%;
-    top: 30%;
     display: flex;
     flex-wrap: wrap;
+    position: absolute;
+    left: 5px;
     color: black;
     font-size: 2rem;
     text-decoration: underline;
 }
+.review {
+    display: flex;
+   max-width: 100%;
+   flex-wrap: wrap;
+    height: 350px;
+    gap: 15px;
+}
 .more-rev {
-    height: 80px;
-    width: 270px;
+    height: 100px;
+    width: 200px;
 }
 header {
     height: 80px;
     width: 150px;
+}
+.about {
+     width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .About-me i {
     font-size: 1.1rem;
@@ -324,7 +344,45 @@ header {
 font-size: 1.5rem;
 color: black;
 }
+.animate-list {
+ width: 300px;
+ padding-left: 15px;
+ position: absolute;
+left: 4%;
+top: 32%;
+margin-top: 20px;
+}
 .animate-list li {
-font-size: 18px;
+font-size: 22px;
+}
+.location-p {
+    position: absolute;
+    left: 3%;
+}
+.krishna-img  img {
+    height: 250px;
+    width: 350px;
+}
+.food-img {
+    margin-top: 10px;
+    height: 150px;
+    width: 150px;   
+}
+.food-img {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+.food-img img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.typewriter p {
+    height: 50px;
+    width: 300px;
+    position: absolute;
+    left: 70px;
+    top: 20px;
 }
 }
